@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo"
+    android:orientation="vertical"
+    tools:context=".GestionarLuz">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:text="Gestionar Luz"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/focoprendido" />
+
+    <Button
+        android:id="@+id/btn_encendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:text="Prender"
+        android:textColor="@color/colorAccent"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/focoapagado" />
+
+    <Button
+        android:id="@+id/btn_apagado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:text="Apagar"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:id="@+id/btn_atras1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Atras"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

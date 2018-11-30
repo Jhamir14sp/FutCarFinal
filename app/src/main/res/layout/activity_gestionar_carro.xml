@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo"
+    android:orientation="vertical"
+    tools:context=".GestionarCarro">
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="180sp"
+        android:layout_gravity="center"
+        android:text="Gestionar Carro"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btn_avanzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Avanzar"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_izquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Giro_Izquierda"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_derecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Giro_Derecha"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_retroceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Retroceder"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_atras2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Atras"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

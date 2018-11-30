@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoapp" />
+
+    <EditText
+        android:id="@+id/TextV_usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/TextV_pas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Iniciar" />
+
+    <TextView
+        android:id="@+id/tv_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Registrar"
+        android:textSize="25dp" />
+
+</LinearLayout>
