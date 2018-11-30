@@ -26,3 +26,4 @@ public class GestionarLuz extends AppCompatActivity {
         });
     }
 }
+
