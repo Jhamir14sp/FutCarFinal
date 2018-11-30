@@ -2,6 +2,7 @@ package com.example.invitado2.futurecar;
 
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,19 +21,13 @@ public class Alarma extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarma);
 
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
         btn_atras3 = (Button) findViewById(R.id.btn_atras3);
-        txt_temp= (TextView) findViewById(R.id.txt_temp);
+        txt_temp=  findViewById(R.id.txt_temp);
 
-        String[] cont= new String[1];
-        String a = null;
-        try {
-            a = durl.downloadUrl("http://"+ durl.getIp());
-            durl.json(a,cont);
-            txt_temp.setText(cont[0]);
-
-        } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), "0", Toast.LENGTH_LONG).show();
-        }
+        txt_temp.setText(temp());
 
 
         btn_atras3.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +37,19 @@ public class Alarma extends AppCompatActivity {
                 Alarma.this.startActivity(intentrg);
             }
         });
+    }
+
+    String temp (){
+        String a="";
+        String[] parts= new String[5];
+        try {
+            //http://localhost/java/iinicio.php?n=david&p=david
+            a = durl.downloadUrl("http://"+ durl.getIp());
+            parts = a.split("\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return parts[2];
     }
     class CargarDatos extends AsyncTask<String, Void, String> {
         @Override
