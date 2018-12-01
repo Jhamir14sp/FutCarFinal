@@ -15,7 +15,7 @@ import java.net.URL;
 
 public class http {
 
-    private String ip = "192.168.43.243.:10";
+    private String ip = "192.168.43.243:10";
 
     public String downloadUrl(String myurl) throws IOException{
         Log.i("URL",""+myurl);
